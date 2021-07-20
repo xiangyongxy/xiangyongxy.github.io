@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .nav{
+            margin-top: 57px;
+            margin-left: 23px;
+            margin-right: 23px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .nav img{
+            height: 22px;
+            display: flex;
+            align-items: center;
+        }
+        .nav div{
+            color: #9e9e9e;
+        }
+        .nav .first{
+            color: #486ce3;
+        }
+        .list{
+            list-style: none;
+            padding-left: 0;
+            margin-left: 35px;
+            margin-right: 27px;
+            margin-top: 43px;
+        }
+        .list li{
+            margin-top: 34px;
+        }
+        .list .top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .list .top img{
+            width: 50px;
+        }
+        .list .top .time{
+            color: #000001;
+            font-size: 40px;
+        }
+        .list .top .btn{
+            display: flex;
+            align-items: center;
+        }
+        .list .bottom{
+            font-size: 14px;
+            color: #000000;
+            margin-top: 16px;
+        }
+        .list .gray{
+            color: #afafaf !important;
+        }
+        .float-btn{
+            display: flex;
+            position: fixed;
+            right: 38px;
+            bottom: 38px;
+        }
+        .float-btn img{
+            width: 50px;
+        }
+        .float-btn .first-btn{
+            margin-right: 29px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="first">闹钟</div>
+        <div>时钟</div>
+        <div>秒表</div>
+        <div>计时</div>
+        <div>
+            <img src="./形状 3.png" alt="">
+        </div>
+    </div>
+    <ul class="list">
+        <li>
+            <div class="top">
+                <div class="time">07:40</div>
+                <div class="btn">
+                    <img src="./开.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">周一至周五 | 16小时18分钟后响铃 </div>
+        </li>
+        <li>
+            <div class="top">
+                <div class="time gray">07:40</div>
+                <div class="btn">
+                    <img src="./关.png" alt="">
+                </div>
+            </div>
+            <div class="bottom gray">周一至周五 | 16小时18分钟后响铃 </div>
+        </li>
+        <li>
+            <div class="top">
+                <div class="time gray">07:40</div>
+                <div class="btn">
+                    <img src="./关.png" alt="">
+                </div>
+            </div>
+            <div class="bottom gray">周一至周五 | 16小时18分钟后响铃 </div>
+        </li>
+    </ul>
+    <div class="float-btn">
+        <div class="first-btn">
+            <img width="50" src="./形状 1.png" alt="">
+        </div>
+        <div>
+            <img src="./形状 2.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
