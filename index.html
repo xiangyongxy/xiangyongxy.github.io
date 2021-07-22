@@ -1,126 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-        }
-        .nav{
-            margin-top: 57px;
-            margin-left: 23px;
-            margin-right: 23px;
-            display: flex;
-            justify-content: space-around;
-            
-        }
-        .nav img{
-            height: 22px;
-            display: flex;
-            align-items: center;
-        }
-        .nav div{
-            color: #9e9e9e;
-        }
-        .nav .first{
-            color: #486ce3;
-        }
-        .list{
-            list-style: none;
-            padding-left: 0;
-            margin-left: 35px;
-            margin-right: 27px;
-            margin-top: 43px;
-        }
-        .list li{
-            margin-top: 34px;
-        }
-        .list .top{
-            display: flex;
-            justify-content: space-between;
-        }
-        .list .top img{
-            width: 50px;
-        }
-        .list .top .time{
-            color: #000001;
-            font-size: 40px;
-        }
-        .list .top .btn{
-            display: flex;
-            align-items: center;
-        }
-        .list .bottom{
-            font-size: 14px;
-            color: #000000;
-            margin-top: 16px;
-        }
-        .list .gray{
-            color: #afafaf !important;
-        }
-        .float-btn{
-            display: flex;
-            position: fixed;
-            right: 38px;
-            bottom: 38px;
-        }
-        .float-btn img{
-            width: 50px;
-        }
-        .float-btn .first-btn{
-            margin-right: 29px;
+    <title>personal portfolio</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "Grotesk";
+            src: url("./fonts/Grotesk.woff2") format("woff2");
         }
     </style>
+    <style>
+        html,
+        body,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .author {
+            font-family: Grotesk;
+            font-size: 26px;
+            color: #000000;
+            letter-spacing: 0.013em;
+            line-height: 1.25;
+            font-weight: 400;
+            text-transform: none;
+            font-style: normal;
+            margin-left: 3%;
+        }
+
+        section {
+            margin: 100px 3% 8%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section div {
+            width: 100%;
+        }
+
+        section div img {
+            width: 100%;
+        }
+
+        .portfolio .left {
+            margin-left: 3%;
+        }
+
+        .portfolio .right {
+            padding-top: 8vw;
+            margin-left: 20%;
+        }
+
+        .portfolio .title {
+            font-family: Grotesk;
+            margin-top: 5px;
+            font-size: 20px;
+            line-height: 1.25;
+            font-weight: 400;
+        }
+
+        .portfolio .center {
+            margin-left: 4%;
+            width: 52%;
+        }
+
+        .portfolio .calendar {
+            width: 56%;
+            flex: 1;
+        }
+
+        .portfolio .sntky {
+            width: 80%;
+            margin-top: 12%;
+            flex: 1;
+        }
+
+
+        .portfolio .in_town {
+            width: 40%;
+        }
+
+        .portfolio .posters {
+            width: 28%;
+        }
+
+        .portfolio.start {
+            justify-content: start;
+        }
+
+        .portfolio.mb0 {
+            margin-bottom: 0;
+        }
+
+        .portfolio .phovea {
+            width: 28%;
+            margin-left: 8%;
+            position: relative;
+            top: -180px;
+        }
+
+        .portfolio .ntky {
+            width: 46%;
+            margin-left: 16%;
+        }
+
+        .portfolio .huber {
+            width: 52%;
+        }
+
+        .portfolio .alice {
+            width: 28%;
+            margin-left: 14%;
+        }
+
+        .portfolio .masque {
+            width: 22%;
+            margin-left: 6%;
+            position: relative;
+            top: 75px;
+        }
+
+        .portfolio .telephone {
+            width: 46%;
+            margin-left: 14%;
+        }
+
+        .portfolio .is_war {
+            width: 40%;
+        }
+
+        .portfolio .belvedere {
+            margin-left: 20%;
+            width: 28%;
+        }
+
+        .portfolio .movie {
+            width: 58%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            font-family: Grotesk;
+            color: #000000;
+        }
+    </style>
+    <style>
+        .portfolio div img{
+            cursor: pointer;
+        }
+        .portfolio div img:hover{
+            opacity: 0.6;
+            transition: opacity 0.8s;
+        }
+    </style>
+    <link rel="stylesheet" href="./mobile.css">
+
+    <link rel="stylesheet" href="./sal/sal.css">
 </head>
+
 <body>
-    <div class="nav">
-        <div class="first">闹钟</div>
-        <div>时钟</div>
-        <div>秒表</div>
-        <div>计时</div>
-        <div>
-            <img src="./形状 3.png" alt="">
+    <header>
+        <a href="/">
+            <h1 class="author">personal portfolio</h1>
+        </a>
+    </header>
+    <section class="portfolio">
+        <div class="left" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_homevideo.jpg" alt="">
+            <div class="title">
+                <p>HomeVideo</p>
+                <p>Book</p>
+            </div>
         </div>
-    </div>
-    <ul class="list">
-        <li>
-            <div class="top">
-                <div class="time">07:40</div>
-                <div class="btn">
-                    <img src="./开.png" alt="">
+        <div class="right" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_typographic_posters_02.gif" alt="">
+            <div class="title">
+                <p>Typography Posters</p>
+                <p>Various Posters</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="center" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_albertalli.jpg" alt="">
+            <div class="title">
+                <p>Reto Albertalli</p>
+                <p>Visual identity</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio left">
+        <div>
+            <div class="calendar" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+                <img src="./images/thumb_calendar_2020.jpg" alt="">
+                <div class="title">
+                    <p>2020</p>
+                    <p>Calendar</p>
                 </div>
             </div>
-            <div class="bottom">周一至周五 | 16小时18分钟后响铃 </div>
-        </li>
-        <li>
-            <div class="top">
-                <div class="time gray">07:40</div>
-                <div class="btn">
-                    <img src="./关.png" alt="">
-                </div>
-            </div>
-            <div class="bottom gray">周一至周五 | 16小时18分钟后响铃 </div>
-        </li>
-        <li>
-            <div class="top">
-                <div class="time gray">07:40</div>
-                <div class="btn">
-                    <img src="./关.png" alt="">
-                </div>
-            </div>
-            <div class="bottom gray">周一至周五 | 16小时18分钟后响铃 </div>
-        </li>
-    </ul>
-    <div class="float-btn">
-        <div class="first-btn">
-            <img width="50" src="./形状 1.png" alt="">
         </div>
         <div>
-            <img src="./形状 2.png" alt="">
+            <div class="sntky" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+                <img src="./images/thumb_sntky.jpg" alt="">
+                <div class="title">
+                    <p>Still nice to know you</p>
+                    <p>Book</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="portfolio">
+        <div class="in_town" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_is_in_town.jpg" alt="">
+            <div class="title">
+                <p>Is in town</p>
+                <p>Website</p>
+            </div>
+        </div>
+        <div class="posters" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_scholtycinema_posters.jpg" alt="">
+            <div class="title">
+                <p>Scholtycinema</p>
+                <p>Posters</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio start mb0">
+        <div class="phovea" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_phovea.jpg" alt="">
+            <div class="title">
+                <p>HomeVideo</p>
+                <p>Book</p>
+            </div>
+        </div>
+        <div class="ntky" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_ntky.jpg" alt="">
+            <div class="title">
+                <p>Typography Posters</p>
+                <p>Various Posters</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio start">
+        <div class="huber" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/holger_huber_kuchenbeiser_02.jpg" alt="">
+            <div class="title">
+                <p>HomeVideo</p>
+                <p>Book</p>
+            </div>
+        </div>
+        <div class="alice" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_alice_in_wonderland.jpg" alt="">
+            <div class="title">
+                <p>Typography Posters</p>
+                <p>Various Posters</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio start">
+        <div class="masque" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_masque_typeface.jpg" alt="">
+            <div class="title">
+                <p>HomeVideo</p>
+                <p>Book</p>
+            </div>
+        </div>
+        <div class="telephone" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_the_telephone_book.jpg" alt="">
+            <div class="title">
+                <p>Typography Posters</p>
+                <p>Various Posters</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio start">
+        <div class="is_war" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_modern_life_is_war.jpg" alt="">
+            <div class="title">
+                <p>HomeVideo</p>
+                <p>Book</p>
+            </div>
+        </div>
+        <div class="belvedere" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/thumb_belvedere_typeface.jpg" alt="">
+            <div class="title">
+                <p>Typography Posters</p>
+                <p>Various Posters</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="center movie" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-back">
+            <img src="./images/holger_huber_movie_covers_006-1920x1280.jpg" alt="">
+            <div class="title">
+                <p>Reto Albertalli</p>
+                <p>Visual identity</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="/">© rfirefly</a>
+    </footer>
+    <script src="./sal/sal.js"></script>
+    <script>
+        sal()
+    </script>
 </body>
+
 </html>
